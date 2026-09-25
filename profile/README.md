@@ -39,12 +39,12 @@ The 3.x suite is a Composer metapackage. It contains no application code. PHP 8.
 | [Taxonomy](https://github.com/nvl-laravel-suite/taxonomy) | Hierarchical vocabularies and terms |
 | [Templates](https://github.com/nvl-laravel-suite/templates) | Versioned HTML and PDF compositions |
 
-[Browse the full package catalog](https://github.com/nicolasvlachos/nvl-laravel-suite/blob/main/packages.md) · [View the suite on Packagist](https://packagist.org/packages/nvl/laravel-suite)
+[Browse all package repositories](https://github.com/orgs/nvl-laravel-suite/repositories) · [View the suite on Packagist](https://packagist.org/packages/nvl/laravel-suite)
 
 ## How the repositories work
 
-The [source monorepo](https://github.com/nicolasvlachos/nvl-laravel-suite) contains the code, integration workbench, tests, and release workflow. Repositories in this organization are independently tagged publication mirrors. Open [issues](https://github.com/nicolasvlachos/nvl-laravel-suite/issues) and [pull requests](https://github.com/nicolasvlachos/nvl-laravel-suite/pulls) on the source repository so changes reach the package mirrors through the release workflow.
+The source monorepo is private. Repositories in this organization are public, independently tagged publication mirrors. Read each package's README for usage and configuration. Open an issue in the affected package repository for bugs and feature requests, or use the [suite issue tracker](https://github.com/nvl-laravel-suite/laravel-suite/issues) for installation and cross-package questions. Maintainers apply accepted changes in the source monorepo and publish mirror releases.
 
 Core includes Support and Data. Filterable stays separate. Tenancy is installed where its contracts are required, but tenant behavior starts disabled. A package can be installed without its optional features being active; check its README and doctor commands before enabling a capability.
 
-[Contributing guide](https://github.com/nicolasvlachos/nvl-laravel-suite/blob/main/CONTRIBUTING.md) · [Private security reporting](https://github.com/nicolasvlachos/nvl-laravel-suite/security/advisories/new) · [Release guide](https://github.com/nicolasvlachos/nvl-laravel-suite/blob/main/docs/releasing.md)
+[Contributing guide](https://github.com/nvl-laravel-suite/.github/blob/main/CONTRIBUTING.md) · [Support](https://github.com/nvl-laravel-suite/.github/blob/main/SUPPORT.md) · [Private security reporting](https://github.com/nvl-laravel-suite/laravel-suite/security/advisories/new)

@@ -1,3 +1,3 @@
 # Organization profile
 
-The public [NVL Laravel Suite organization profile](profile/README.md) introduces the independently published packages. Package code and pull requests are maintained in the [source monorepo](https://github.com/nicolasvlachos/nvl-laravel-suite).
+The public [NVL Laravel Suite organization profile](profile/README.md) introduces the independently published packages. The package repositories contain public releases and documentation. Maintainers develop and release them from a private source monorepo; see [Contributing](CONTRIBUTING.md) for the public issue process.

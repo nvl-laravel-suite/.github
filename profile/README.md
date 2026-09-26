@@ -10,6 +10,8 @@ composer require nvl/laravel-suite:^3.0
 
 The 3.x suite is a Composer metapackage. It contains no application code. PHP 8.4+ is required. Composer installs the dependencies each selected package declares; package configuration controls whether optional routes and features are enabled.
 
+[Installation, configuration, skills, and upgrade guide](https://github.com/nvl-laravel-suite/laravel-suite/blob/main/docs/installation.md)
+
 ## Choose packages
 
 | Foundation and localization | What it provides |

@@ -47,6 +47,8 @@ The 3.x suite is a Composer metapackage. It contains no application code. PHP 8.
 
 The source monorepo is private. Repositories in this organization are public, independently tagged publication mirrors. Read each package's README for usage and configuration. Open an issue in the affected package repository for bugs and feature requests, or use the [suite issue tracker](https://github.com/nvl-laravel-suite/laravel-suite/issues) for installation and cross-package questions. Maintainers apply accepted changes in the source monorepo and publish mirror releases.
 
+A compatible change to one package can be released independently. The suite metapackage needs a new version when its dependency requirements or public documentation change. Direct mirror commits do not update source and can block the next release.
+
 Core includes Support and Data. Filterable stays separate. Tenancy is installed where its contracts are required, but tenant behavior starts disabled. A package can be installed without its optional features being active; check its README and doctor commands before enabling a capability.
 
 [Contributing guide](https://github.com/nvl-laravel-suite/.github/blob/main/CONTRIBUTING.md) · [Support](https://github.com/nvl-laravel-suite/.github/blob/main/SUPPORT.md) · [Private security reporting](https://github.com/nvl-laravel-suite/laravel-suite/security/advisories/new)

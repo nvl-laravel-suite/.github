@@ -4,11 +4,11 @@
 
 ```bash
 composer require nvl/core:^2.0 nvl/filterable:^2.0
-# Or install all 21 packages:
-composer require nvl/laravel-suite:^3.0
+# Or install the established 21-package composition:
+composer require nvl/laravel-suite:^4.0
 ```
 
-The 3.x suite is a Composer metapackage. It contains no application code. PHP 8.4+ is required. Composer installs the dependencies each selected package declares; package configuration controls whether optional routes and features are enabled.
+The 4.x suite is a Composer metapackage. It contains no application code. It selects Tasks 3.x and Activity 2.3 or later. PHP 8.4+ is required. Composer installs the dependencies each selected package declares; package configuration controls whether optional routes and features are enabled. Existing suite 3.x consumers should read the [Tasks 3 upgrade guide](https://github.com/nvl-laravel-suite/tasks/blob/main/UPGRADING.md) before upgrading.
 
 [Installation, configuration, skills, and upgrade guide](https://github.com/nvl-laravel-suite/laravel-suite/blob/main/docs/installation.md)
 
@@ -37,9 +37,20 @@ The 3.x suite is a Composer metapackage. It contains no application code. PHP 8.
 | [Pages](https://github.com/nvl-laravel-suite/pages) | Hierarchical pages and dynamic resources |
 | [SEO](https://github.com/nvl-laravel-suite/seo) | Metadata, canonical output, and sitemaps |
 | [Settings](https://github.com/nvl-laravel-suite/settings) | Typed database-backed settings |
-| [Tasks](https://github.com/nvl-laravel-suite/tasks) | Tenant-safe tasks and assignees |
+| [Tasks](https://github.com/nvl-laravel-suite/tasks) | Tenant-safe tasks, checklists, tags, time entries, and dependencies |
 | [Taxonomy](https://github.com/nvl-laravel-suite/taxonomy) | Hierarchical vocabularies and terms |
 | [Templates](https://github.com/nvl-laravel-suite/templates) | Versioned HTML and PDF compositions |
+
+## Optional Stripe packages
+
+Billing and Payments are independently published and are not installed by the suite metapackage. Install only the capability your application needs:
+
+```bash
+composer require nvl/billing:^2.0   # Tenant-owned subscriptions and trials
+composer require nvl/payments:^2.0  # Order payments, capture, and refunds
+```
+
+Read [Billing](https://github.com/nvl-laravel-suite/billing) and [Payments](https://github.com/nvl-laravel-suite/payments) for setup, migrations, authorization, and Stripe webhooks. Both packages start disabled until configured.
 
 [Browse all package repositories](https://github.com/orgs/nvl-laravel-suite/repositories) · [View the suite on Packagist](https://packagist.org/packages/nvl/laravel-suite)
 
